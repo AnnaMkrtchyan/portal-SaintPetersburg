@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша Санкт-Петербург</title>
+    <link rel="icon" href="img/window_icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container header-top">
+            <div class="row align-items-end">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8">
+                    <div>
+                        <a href="main.html" class="main-logo d-flex text-decoration-none">
+                            <div class="logo-img">
+                                <img src="./img/Peterburg-logo.png" alt="header logo" />
+                            </div>
+                            <div>
+                                <p class="subtitle fs-12 text-grey mb-0">Городской портал</p>
+                                <p class="city-name text-black mb-0">Санкт-Петербург</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-5 col-4 dnone">
+                    <div class="d-flex justify-content-center" id="header-news">
+                        <div class="d-flex flex-column mobile-none">
+                            <span class="text-grey fs-12">Понедельник</span>
+                            <span class="text-black fs-14" style="margin-top: 3px;">19 июля</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span class="text-blue fs-12">Погода</span>
+                            <p class="text-black fs-14 d-flex align-items-center mb-0">
+                                12°С
+                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C12.8202 12 10.9637 13.3955 10.2802 15.3448L10.036 16.0412L9.29855 16.0132C9.27884 16.0125 9.23736 16.0105 9.19359 16.0085C9.16966 16.0074 9.14505 16.0062 9.12293 16.0052C9.08803 16.0036 9.05517 16.0022 9.02873 16.0012C9.00504 16.0002 8.99569 16 8.99569 16C8.99569 16 8.99724 16 9 16C7.34315 16 6 17.3431 6 19C6 20.6569 7.34315 22 9 22H21C22.6569 22 24 20.6569 24 19C24 17.3431 22.6569 16 21 16C20.9143 16 20.8298 16.0036 20.7466 16.0105L19.9758 16.0747L19.7198 15.3448C19.0363 13.3955 17.1798 12 15 12ZM8.66879 14.0108C9.78957 11.641 12.2021 10 15 10C17.7979 10 20.2104 11.641 21.3312 14.0108C23.9382 14.1813 26 16.3499 26 19C26 21.7614 23.7614 24 21 24H9C6.23858 24 4 21.7614 4 19C4 16.3499 6.06178 14.1813 8.66879 14.0108Z" fill="#D0D7DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00044 10C6.00044 8.34315 7.34359 7 9.00044 7C10.5191 7 11.7743 8.12847 11.973 9.59264C12.5858 9.34192 13.2366 9.16501 13.9147 9.07303C13.48 6.75451 11.4451 5 9.00044 5C6.23902 5 4.00044 7.23858 4.00044 10C4.00044 11.5704 4.72446 12.9718 5.8569 13.8884C6.50802 13.4871 7.24162 13.2068 8.02637 13.0787C8.06476 13.0105 8.10412 12.943 8.14444 12.8761C6.90465 12.5077 6.00044 11.3594 6.00044 10Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00044 0C9.55273 0 10.0004 0.447715 10.0004 1V3C10.0004 3.55228 9.55273 4 9.00044 4C8.44816 4 8.00044 3.55228 8.00044 3V1C8.00044 0.447715 8.44816 0 9.00044 0Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.340196 5C0.616339 4.52171 1.22793 4.35783 1.70622 4.63398L3.43827 5.63398C3.91657 5.91012 4.08044 6.52171 3.8043 7C3.52816 7.47829 2.91657 7.64217 2.43827 7.36603L0.706222 6.36603C0.227929 6.08989 0.0640539 5.47829 0.340196 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6607 5C17.9368 5.47829 17.773 6.08988 17.2947 6.36602L15.5626 7.36602C15.0843 7.64217 14.4727 7.47829 14.1966 7C13.9204 6.52171 14.0843 5.91011 14.5626 5.63397L16.2947 4.63397C16.773 4.35783 17.3846 4.52171 17.6607 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80431 13C4.08045 13.4783 3.91657 14.0899 3.43828 14.366L1.70623 15.366C1.22794 15.6422 0.616348 15.4783 0.340206 15C0.0640634 14.5217 0.227939 13.9101 0.706231 13.634L2.43828 12.634C2.91657 12.3578 3.52817 12.5217 3.80431 13Z" fill="#FFAE50"/>
+                                </svg>                                        
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span class="text-grey fs-12">Завтра</span>
+                            <p class="text-grey fs-14 d-flex align-items-center mb-0">
+                                15°С
+                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C12.8202 12 10.9637 13.3955 10.2802 15.3448L10.036 16.0412L9.29855 16.0132C9.27884 16.0125 9.23736 16.0105 9.19359 16.0085C9.16966 16.0074 9.14505 16.0062 9.12293 16.0052C9.08803 16.0036 9.05517 16.0022 9.02873 16.0012C9.00504 16.0002 8.99569 16 8.99569 16C8.99569 16 8.99724 16 9 16C7.34315 16 6 17.3431 6 19C6 20.6569 7.34315 22 9 22H21C22.6569 22 24 20.6569 24 19C24 17.3431 22.6569 16 21 16C20.9143 16 20.8298 16.0036 20.7466 16.0105L19.9758 16.0747L19.7198 15.3448C19.0363 13.3955 17.1798 12 15 12ZM8.66879 14.0108C9.78957 11.641 12.2021 10 15 10C17.7979 10 20.2104 11.641 21.3312 14.0108C23.9382 14.1813 26 16.3499 26 19C26 21.7614 23.7614 24 21 24H9C6.23858 24 4 21.7614 4 19C4 16.3499 6.06178 14.1813 8.66879 14.0108Z" fill="#D0D7DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00044 10C6.00044 8.34315 7.34359 7 9.00044 7C10.5191 7 11.7743 8.12847 11.973 9.59264C12.5858 9.34192 13.2366 9.16501 13.9147 9.07303C13.48 6.75451 11.4451 5 9.00044 5C6.23902 5 4.00044 7.23858 4.00044 10C4.00044 11.5704 4.72446 12.9718 5.8569 13.8884C6.50802 13.4871 7.24162 13.2068 8.02637 13.0787C8.06476 13.0105 8.10412 12.943 8.14444 12.8761C6.90465 12.5077 6.00044 11.3594 6.00044 10Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00044 0C9.55273 0 10.0004 0.447715 10.0004 1V3C10.0004 3.55228 9.55273 4 9.00044 4C8.44816 4 8.00044 3.55228 8.00044 3V1C8.00044 0.447715 8.44816 0 9.00044 0Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.340196 5C0.616339 4.52171 1.22793 4.35783 1.70622 4.63398L3.43827 5.63398C3.91657 5.91012 4.08044 6.52171 3.8043 7C3.52816 7.47829 2.91657 7.64217 2.43827 7.36603L0.706222 6.36603C0.227929 6.08989 0.0640539 5.47829 0.340196 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6607 5C17.9368 5.47829 17.773 6.08988 17.2947 6.36602L15.5626 7.36602C15.0843 7.64217 14.4727 7.47829 14.1966 7C13.9204 6.52171 14.0843 5.91011 14.5626 5.63397L16.2947 4.63397C16.773 4.35783 17.3846 4.52171 17.6607 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80431 13C4.08045 13.4783 3.91657 14.0899 3.43828 14.366L1.70623 15.366C1.22794 15.6422 0.616348 15.4783 0.340206 15C0.0640634 14.5217 0.227939 13.9101 0.706231 13.634L2.43828 12.634C2.91657 12.3578 3.52817 12.5217 3.80431 13Z" fill="#FFAE50"/>
+                                </svg>                                        
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column last-block">
+                            <span class="text-grey fs-12">Курсы валют</span>
+                            <p class="fs-14 mb-0" style="margin-top: 3px;">
+                                <span class="text-grey">$</span> 77,50 <span class="text-grey">&bull; €</span> 90,04
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-2 col-3">
+                    <div class="header-icons">
+                        <form class="d-flex justify-content-end">
+                            <div>
+                                <div class="search-block position-relative">
+                                    <input class="form-control search-box" type="search" placeholder="Поиск по сайту" autocomplete="off" role="combobox" id="input" name="browsers">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon position-absolute">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z"/>
+                                        <path d="M11.9056 13.3199L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L13.3199 11.9056C12.9092 12.4339 12.4339 12.9092 11.9056 13.3199Z"/>
+                                    </svg>
+                                </div>
+                                <datalist id="browsers" role="listbox">
+                                    <option value="Зоотовары">Зоотовары</option>
+                                    <option value="Товары для дачи">Товары для дачи</option>
+                                    <option value="Товары для дома">Товары для дома</option>
+                                    <option value="Спорттовары">Спорттовары</option>
+                                </datalist>
+                            </div>
+                            <a href="#login-modal" class="btn btn-bordered d-flex align-items-center text-blue fs-14 dnone" data-bs-toggle="modal">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9C16 5.13401 12.866 2 9 2ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#3289EF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07451 12.4272C4.11683 12.3975 4.15956 12.3683 4.20266 12.3395C4.70371 12.0055 5.27113 11.7267 5.88658 11.5115C5.33206 10.825 5 9.95126 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9C13 9.95126 12.6679 10.825 12.1134 11.5115C12.7289 11.7267 13.2963 12.0055 13.7973 12.3395C13.8404 12.3683 13.8832 12.3975 13.9255 12.4272C13.5338 12.9892 13.0483 13.4809 12.4918 13.8798C11.6037 13.3488 10.3822 13 9 13C7.61779 13 6.39629 13.3488 5.50816 13.8798C4.95167 13.4809 4.46624 12.9892 4.07451 12.4272ZM7 9C7 7.89543 7.89543 7 9 7C10.1046 7 11 7.89543 11 9C11 10.1046 10.1046 11 9 11C7.89543 11 7 10.1046 7 9Z" fill="#3289EF"/>
+                                </svg>                                        
+                                <span class="tablet-none">Войти</span>
+                            </a>
+                        </form>
+                        <div class="mobile-menu">
+                            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <div id="navbar-open" style="margin-top: -1px;">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1Z" fill="#3289EF"/>
+                                        <path d="M0 6C0 5.44772 0.447715 5 1 5H15C15.5523 5 16 5.44772 16 6C16 6.55228 15.5523 7 15 7H1C0.447715 7 0 6.55228 0 6Z" fill="#3289EF"/>
+                                        <path d="M0 11C0 10.4477 0.447715 10 1 10H15C15.5523 10 16 10.4477 16 11C16 11.5523 15.5523 12 15 12H1C0.447715 12 0 11.5523 0 11Z" fill="#3289EF"/>
+                                    </svg>
+                                </div>
+                                <div id="navbar-close" class="hidden">
+                                    <img src="img/close.svg" alt="close icon" width="16" height="16" style="margin-bottom: 3px;" />
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <div>
+                                    <form>
+                                        <div>
+                                            <div class="search-block position-relative">
+                                                <input class="form-control search-box pe-5" type="" placeholder="Поиск по сайту" autocomplete="off" role="combobox" id="input-mobile" name="mobile-result">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon position-absolute">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z"/>
+                                                    <path d="M11.9056 13.3199L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L13.3199 11.9056C12.9092 12.4339 12.4339 12.9092 11.9056 13.3199Z"/>
+                                                </svg>
+                                            </div>
+                                            <datalist id="mobile-result" role="listbox">
+                                                <option value="Зоотовары">Зоотовары</option>
+                                                <option value="Товары для дачи">Товары для дачи</option>
+                                                <option value="Товары для дома">Товары для дома</option>
+                                                <option value="Спорттовары">Спорттовары</option>
+                                            </datalist>
+                                        </div>
+                                    </form>
+                                    <p class="navbar-brand text-black mb-1 pt-0">Меню</p>
+                                    <ul class="navbar-nav m-0 p-0">
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Новости
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Объявления
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Афиша
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Справочник организаций
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Еще раздел
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Еще один раздел
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-menu-bottom">
+                                    <p class="text-grey text-center pb-2 border-bottom">Понедельник, <span class="text-black">19 июля</span></p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column me-4">
+                                                <span class="text-blue fs-12">Погода</span>
+                                                <p class="text-black fs-14 d-flex align-items-center mb-0">
+                                                    12°С
+                                                    <img src="img/icons/sunny.svg" alt="sunny icon" width="25" height="24" />                               
+                                                </p>
+                                            </div>
+                                            <div class="d-flex flex-column me-3">
+                                                <span class="text-grey fs-12">Завтра</span>
+                                                <p class="text-grey fs-14 d-flex align-items-center mb-0">
+                                                    15°С
+                                                    <img src="img/icons/sunny.svg" alt="sunny icon" width="25" height="24" />                                       
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column last-block">
+                                            <span class="text-grey fs-12">Курсы валют</span>
+                                            <p class="fs-14 mb-0" style="margin-top: 3px;">
+                                                <span class="text-grey">$</span> 77,50 <span class="text-grey">• €</span> 90,04
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-menu"> 
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div id="header-navbar">
+                        <nav class="navbar navbar-expand" >
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav m-0 p-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="news.html" id="navbarDropdown">
+                                            Новости
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Происшествия</a></li>
+                                            <li><a class="dropdown-item" href="#">Политика</a></li>
+                                            <li><a class="dropdown-item" href="#">Спорт</a></li>
+                                            <li><a class="dropdown-item" href="#">Общество</a></li>
+                                            <li><a class="dropdown-item" href="#">Здоровье</a></li>
+                                            <li><a class="dropdown-item" href="#">Экономика</a></li>
+                                            <li><a class="dropdown-item" href="#">#Коронавирус</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="announcements.html">Объявления</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="events.html">Афиша</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="companies.html">Справочник организаций</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Еще раздел</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-last" href="#">Еще один раздел</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-bottom"> 
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div class="covid-section bg-white d-flex justify-content-between">
+                        <div>
+                            <p class="text-grey fs-14 mb-0">Коронавирус</p>
+                        </div>
+                        <div class="d-flex dnone">
+                            <p class="text-black fs-14 mb-0">В Санкт-Петербурге: 5812 <span class="text-grey">(+49)</span></p>
+                            <p class="text-black fs-14 mb-0 tablet-none">В области: 110 153 <span class="text-grey">(+3742)</span></p>
+                            <p class="text-black fs-14 mb-0 mobile-none">В России: 1 340 409 <span class="text-grey">(+13 424)</span></p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-blue fs-14 mb-0 d-flex align-items-center text-decoration-none">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-1">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11ZM12 6C12 9.31371 9.31371 12 6 12C2.68629 12 -3.12222e-07 9.31371 0 6C3.12222e-07 2.68629 2.68629 -3.12222e-07 6 0C9.31371 3.12222e-07 12 2.68629 12 6Z" fill="#3289EF"/>
+                                    <path d="M5.99861 4.72999C6.35152 4.72999 6.63761 5.01608 6.63761 5.36899V8.86099C6.63761 9.2139 6.35152 9.49999 5.99861 9.49999C5.6457 9.49999 5.35961 9.2139 5.35961 8.86099V5.36899C5.35961 5.01608 5.6457 4.72999 5.99861 4.72999ZM5.98982 2.5C6.21782 2.5 6.40382 2.572 6.54782 2.716C6.69782 2.854 6.77282 3.031 6.77282 3.247C6.77282 3.463 6.69782 3.643 6.54782 3.787C6.40382 3.925 6.21782 3.994 5.98982 3.994C5.76182 3.994 5.57582 3.925 5.43182 3.787C5.28782 3.643 5.21582 3.463 5.21582 3.247C5.21582 3.031 5.28782 2.854 5.43182 2.716C5.57582 2.572 5.76182 2.5 5.98982 2.5Z" fill="#3289EF"/>
+                                </svg>
+                                О вакцинации
+                            </a>
+                        </div>
+                    </div>
+                    <div class="covid-section bg-white pt-0 px-0 d-none">
+                        <div class="d-flex scrollable-block">
+                            <p class="text-black fs-14 mb-0" style="margin-left: 10px;">В Санкт-Петербурге: 5812 <span class="text-grey">(+49)</span></p>
+                            <p class="text-black fs-14 mb-0">В области: 110 153 <span class="text-grey">(+3742)</span></p>
+                            <p class="text-black fs-14 mb-0" style="margin-right: 10px;">В России: 1 340 409 <span class="text-grey">(+13 424)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+    
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12">
+                        <div class="events-title-block">
+                            <div>
+                                <h1 class="section-title text-black">Афиша Санкт-Петербург</h1>
+                                <a href="#" class="events-add text-blue text-decoration-none align-items-center add-btn ">
+                                    <svg width="14" height="14" class="me-2" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C7.55228 0 8 0.447715 8 1V6H13C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8H8L8 13C8 13.5523 7.55228 14 7 14C6.44771 14 6 13.5523 6 13L6 8H1C0.447715 8 0 7.55228 0 7C0 6.44772 0.447715 6 1 6H6V1C6 0.447715 6.44772 0 7 0Z" fill="#3289EF"/>
+                                    </svg>
+                                    Добавить событие
+                                </a>
+                            </div>
+                            <ul class="section-list list-unstyled d-flex">
+                                <li><a href="#" class="ms-0">Кино</a></li>
+                                <li><a href="#" class="me-0">Театр</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-9 col-xl-9 col-lg-9">
+                        <div>
+                            <ul class="nav nav-tabs event-tabs border-0" id="myTab" role="tablist">
+                                <li class="nav-item ms-0" role="presentation">
+                                    <button class="nav-link active" id="today-tab" data-bs-toggle="tab" data-bs-target="#today" type="button" role="tab" aria-controls="today" aria-selected="true">
+                                        Сегодня <br> <span class="fs-12">чт</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="friday-tab" data-bs-toggle="tab" data-bs-target="#friday" type="button" role="tab" aria-controls="friday" aria-selected="false">
+                                        Завтра <br> <span class="fs-12">пт</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="saturday-tab" data-bs-toggle="tab" data-bs-target="#saturday" type="button" role="tab" aria-controls="saturday" aria-selected="false">
+                                        7 сентября <br> <span class="fs-12">сб</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="sunday-tab" data-bs-toggle="tab" data-bs-target="#sunday" type="button" role="tab" aria-controls="sunday" aria-selected="false">
+                                        8 сентября <br> <span class="fs-12">вс</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="monday-tab" data-bs-toggle="tab" data-bs-target="#monday" type="button" role="tab" aria-controls="monday" aria-selected="false">
+                                        9 сентября <br> <span class="fs-12">пн</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="tuesday-tab" data-bs-toggle="tab" data-bs-target="#tuesday" type="button" role="tab" aria-controls="tuesday" aria-selected="false">
+                                        10 сентября <br> <span class="fs-12">вт</span>
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="wednesday-tab" data-bs-toggle="tab" data-bs-target="#wednesday" type="button" role="tab" aria-controls="wednesday" aria-selected="false">
+                                        11 сентября <br> <span class="fs-12">ср</span>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="today" role="tabpanel" aria-labelledby="today-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/4.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Приключения, Боевик, Фантастика</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Приключения, Боевик, Фантастика</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом блокбастере MARVEL «Чёрная Вдова» Наташе Романофф предстоит лицом к лицу встретиться со своим 
+                                                прошлым. Чёрной Вдове придется вспомнить о том, что было в её жизни задолго до присоединения к команде
+                                                Мстителей, и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые - Елена 
+                                                (в исполнении Флоренс Пью), Алексей, также известный как Красный Страж (в исполнении Дэвида Харбора), 
+                                                и Мелина (в исполнении Рэйчел Вайс).
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue pe-3">Люмен — кинотеатр в Санкт-Петербурге</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">09:00</del></li>
+                                                        <li><del class="text-grey">10:30</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50<sup>3D</sup></li>
+                                                        <li class="text-black">15:20</li>
+                                                        <li class="text-black">17:00</li>
+                                                        <li class="text-black">17:30</li>
+                                                        <li class="text-black">18:20</li>
+                                                        <li class="text-black">19:00<sup>3D</sup></li>
+                                                        <li class="text-black">20:15</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50<sup>3D</sup></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="more text-decoration-none fs-12 text-blue">еще 4 кинотеатра</a>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/4.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Приключения, Боевик, Фантастика</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Приключения, Боевик, Фантастика</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом блокбастере MARVEL «Чёрная Вдова» Наташе Романофф предстоит лицом к лицу встретиться со своим 
+                                                прошлым. Чёрной Вдове придется вспомнить о том, что было в её жизни задолго до присоединения к команде
+                                                Мстителей, и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые - Елена 
+                                                (в исполнении Флоренс Пью), Алексей, также известный как Красный Страж (в исполнении Дэвида Харбора), 
+                                                и Мелина (в исполнении Рэйчел Вайс).
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue pe-3">Люмен — кинотеатр в Санкт-Петербурге</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">09:00</del></li>
+                                                        <li><del class="text-grey">10:30</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50<sup>3D</sup></li>
+                                                        <li class="text-black">15:20</li>
+                                                        <li class="text-black">17:00</li>
+                                                        <li class="text-black">17:30</li>
+                                                        <li class="text-black">18:20</li>
+                                                        <li class="text-black">19:00<sup>3D</sup></li>
+                                                        <li class="text-black">20:15</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50<sup>3D</sup></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="more text-decoration-none fs-12 text-blue">еще 4 кинотеатра</a>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="friday" role="tabpanel" aria-labelledby="friday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/4.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Приключения, Боевик, Фантастика</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Приключения, Боевик, Фантастика</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом блокбастере MARVEL «Чёрная Вдова» Наташе Романофф предстоит лицом к лицу встретиться со своим 
+                                                прошлым. Чёрной Вдове придется вспомнить о том, что было в её жизни задолго до присоединения к команде
+                                                Мстителей, и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые - Елена 
+                                                (в исполнении Флоренс Пью), Алексей, также известный как Красный Страж (в исполнении Дэвида Харбора), 
+                                                и Мелина (в исполнении Рэйчел Вайс).
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue pe-3">Люмен — кинотеатр в Санкт-Петербурге</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">09:00</del></li>
+                                                        <li><del class="text-grey">10:30</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50<sup>3D</sup></li>
+                                                        <li class="text-black">15:20</li>
+                                                        <li class="text-black">17:00</li>
+                                                        <li class="text-black">17:30</li>
+                                                        <li class="text-black">18:20</li>
+                                                        <li class="text-black">19:00<sup>3D</sup></li>
+                                                        <li class="text-black">20:15</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50<sup>3D</sup></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="more text-decoration-none fs-12 text-blue">еще 4 кинотеатра</a>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="saturday" role="tabpanel" aria-labelledby="saturday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/4.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Приключения, Боевик, Фантастика</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Приключения, Боевик, Фантастика</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом блокбастере MARVEL «Чёрная Вдова» Наташе Романофф предстоит лицом к лицу встретиться со своим 
+                                                прошлым. Чёрной Вдове придется вспомнить о том, что было в её жизни задолго до присоединения к команде
+                                                Мстителей, и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые - Елена 
+                                                (в исполнении Флоренс Пью), Алексей, также известный как Красный Страж (в исполнении Дэвида Харбора), 
+                                                и Мелина (в исполнении Рэйчел Вайс).
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue pe-3">Люмен — кинотеатр в Санкт-Петербурге</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">09:00</del></li>
+                                                        <li><del class="text-grey">10:30</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50<sup>3D</sup></li>
+                                                        <li class="text-black">15:20</li>
+                                                        <li class="text-black">17:00</li>
+                                                        <li class="text-black">17:30</li>
+                                                        <li class="text-black">18:20</li>
+                                                        <li class="text-black">19:00<sup>3D</sup></li>
+                                                        <li class="text-black">20:15</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50<sup>3D</sup></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="more text-decoration-none fs-12 text-blue">еще 4 кинотеатра</a>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="sunday" role="tabpanel" aria-labelledby="sunday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="monday" role="tabpanel" aria-labelledby="monday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tuesday" role="tabpanel" aria-labelledby="tuesday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/4.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Приключения, Боевик, Фантастика</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">Чёрная вдова</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Приключения, Боевик, Фантастика</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом блокбастере MARVEL «Чёрная Вдова» Наташе Романофф предстоит лицом к лицу встретиться со своим 
+                                                прошлым. Чёрной Вдове придется вспомнить о том, что было в её жизни задолго до присоединения к команде
+                                                Мстителей, и узнать об опасном заговоре, в который оказываются втянуты её старые знакомые - Елена 
+                                                (в исполнении Флоренс Пью), Алексей, также известный как Красный Страж (в исполнении Дэвида Харбора), 
+                                                и Мелина (в исполнении Рэйчел Вайс).
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue pe-3">Люмен — кинотеатр в Санкт-Петербурге</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">09:00</del></li>
+                                                        <li><del class="text-grey">10:30</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50<sup>3D</sup></li>
+                                                        <li class="text-black">15:20</li>
+                                                        <li class="text-black">17:00</li>
+                                                        <li class="text-black">17:30</li>
+                                                        <li class="text-black">18:20</li>
+                                                        <li class="text-black">19:00<sup>3D</sup></li>
+                                                        <li class="text-black">20:15</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50</li>
+                                                        <li class="text-black">22:50<sup>3D</sup></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="more text-decoration-none fs-12 text-blue">еще 4 кинотеатра</a>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="wednesday" role="tabpanel" aria-labelledby="wednesday-tab">
+                                    <div class="event-item d-flex position-relative">
+                                        <div class="img-block">
+                                            <img src="./img/posters/3.jpg" class="img-fluid" alt="film poster" width="100%">
+                                            <div class="img-block--mobile">
+                                                <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                                <p class="subtitle fs-12 text-grey mb-0">Короткометражный, Мультфильм, Приключение</p>
+                                                <a href="#" class="more-btn fs-12 text-blue text-decoration-none">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="info">
+                                            <h2 class="title text-black mb-1">МУЛЬТ в кино. Выпуск № 128. Мульты не на каникулах</h2>
+                                            <p class="subtitle fs-12 text-grey mb-1">Короткометражный, Мультфильм, Приключение</p>
+                                            <p class="desc fs-12 text-black">
+                                                В новом выпуске «МУЛЬТ в кино» Кеша и Саня построят кукольный домик, Катя и 
+                                                Эф отправятся в Польшу, кошечки и собачки отпразднуют два дня рождения в один день, 
+                                                Лео и Тиг познакомятся с Духом цветов, а Сказочный патруль будут искать вора. 
+                                                «МУЛЬТ в кино. Выпуск 128. Мульты не на каникулах» — в кинотеатрах с 17 июля!
+                                            </p>
+                                            <div class="timetable d-flex">
+                                                <div class="cinema-name ">
+                                                    <p class="fs-12 text-blue">Синема Стар</p>
+                                                </div>
+                                                <div class="dates">
+                                                    <ul class="list-unstyled d-flex flex-wrap mb-0">
+                                                        <li><del class="text-grey">08:05</del></li>
+                                                        <li><del class="text-grey">09:20</del></li>
+                                                        <li><del class="text-grey">11:40</del></li>
+                                                        <li class="text-black">13:50</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="fixed position-absolute fs-12 text-black">18+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events-pagination">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center align-items-center mb-0">
+                                        <li class="page-item page-arrows arrow-previous">
+                                            <a class="page-link p-0" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">
+                                                    <svg width="10" height="20" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 1L2 11L12 21" stroke="#D0D7DA" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item page-arrows arrow-next">
+                                            <a class="page-link p-0" href="#" aria-label="Next">
+                                                <span aria-hidden="true">
+                                                    <svg width="10" height="20" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1L11 11L1 21" stroke="#3289EF" stroke-width="2" stroke-linecap="round"/>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item page-numbers"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item page-numbers"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item page-numbers"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item page-numbers"><a class="page-link" href="#">4</a></li>
+                                        <li class="page-item page-numbers"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item page-numbers"><a class="page-link" href="#">13</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3">
+                        <div>
+                            <a href="#" class="events-add text-blue text-decoration-none d-flex align-items-center justify-content-end btn-none">
+                                <svg width="14" height="14" class="me-2" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C7.55228 0 8 0.447715 8 1V6H13C13.5523 6 14 6.44772 14 7C14 7.55228 13.5523 8 13 8H8L8 13C8 13.5523 7.55228 14 7 14C6.44771 14 6 13.5523 6 13L6 8H1C0.447715 8 0 7.55228 0 7C0 6.44772 0.447715 6 1 6H6V1C6 0.447715 6.44772 0 7 0Z" fill="#3289EF"/>
+                                </svg>
+                                Добавить событие
+                            </a>
+                            <div class="cinemas bg-white">
+                                <p class="text-black">Кинотеарты Санкт-Петербурга</p>
+                                <ul class="list-unstyled text-blue m-0">
+                                    <li>Люмен — кинотеатр в Санкт-Петербурге</li>
+                                    <li>Киномакс, ул. Последняя, 87а</li>
+                                    <li>Синема Парк</li>
+                                    <li>Синема стар, Московский пр. 5</li>
+                                    <li>Синема стар, ул. Пролетарская 125</li>
+                                    <li>Синема стар, Пролетарская 125</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <a href="main.html">
+                            <img src="./img/footer/footer-logo.svg" alt="footer logo" width="123" />
+                        </a>
+                        <p class="text-grey fs-14 mb-0 none">© 178info.ru, 2021</p>
+                    </div>
+                </div>
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+                    <div>
+                        <nav class="navbar navbar-expand p-0">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav m-0 p-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link ps-0" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="announcements.html">Объявления</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="events.html">Афиша</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="companies.html">Справочник организаций</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Еще раздел</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link pe-0" href="#">Еще один раздел</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 tablet-none">
+                    <div class="d-flex justify-content-end">
+                        <p class="text-grey fs-14 mb-0">© 178info.ru, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-10">
+                    <div>
+                        <p class="text-grey text mb-0">Допускается цитирование материалов без получения предварительного согласия 3652.ru при условии размещения в тексте обязательной ссылки на 3652.ru - Сайт города Симферополя. Для интернет-изданий обязательно размещение прямой, открытой для поисковых систем гиперссылки на цитируемые статьи не ниже второго абзаца в тексте или в качестве источника. Нарушение исключительных прав преследуется по закону.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-2">
+                    <div class="d-flex justify-content-end">
+                        <img src="./img/footer/18+.svg" alt="footer logo" width="38" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>

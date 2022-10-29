@@ -1,0 +1,273 @@
+.breadcrumb-nav {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.breadcrumb-nav .breadcrumb-item a, .breadcrumb-item.active {
+    font-family: 'Formular-Medium';
+}
+.breadcrumb-nav .breadcrumb-item.active {
+    color: #D0D7DA;
+}
+.breadcrumb-nav .breadcrumb-item+.breadcrumb-item::before {
+    color: #D0D7DA;
+}
+
+/* event */
+.event-block {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.event-block .close-icon {
+    right: 20px;
+    top: 20px;
+}
+.event-block .mobile-title {
+    display: none;
+}
+
+/* event | images */
+.event-block .images {
+    width: 30%;
+}
+.event-block .images img {
+    border-radius: 5px;
+}
+.event-block .images .thumbnail-block {
+    margin-top: 10px;
+}
+.event-block .images .thumbnail-block .item {
+    margin-right: 10px;
+}
+.event-block .images .thumbnail-block .item img {
+    width: 80px;
+    height: 80px;
+}
+
+/* event | about */
+.event-block .about {
+    width: 70%;
+    margin-left: 20px;
+}
+.event-block .type {
+    font-family: 'Formular-Medium';
+}
+.event-block .title {
+    font-family: 'Formular-Bold';
+    font-size: 24px;
+    line-height: 28px;
+}
+.event-block .subtitle, 
+.event-block .desc {
+    font-family: 'Formular-Regular';
+}
+
+/* timetable */
+.timetable {
+    padding-top: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #D0D7DA;
+}
+.timetable:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.timetable .cinema-name {
+    width: 28%;
+}
+.timetable .cinema-name p {
+    font-family: 'Formular-Medium';
+}
+.timetable .dates {
+    width: 72%;
+    font-size: 12px;
+}
+.timetable ul li {
+    width: 65px;
+    padding-bottom: 5px;
+    font-family: 'Formular-Regular';
+}
+.timetable ul li sup {
+    font-family: 'Formular-Medium';
+    font-size: 8px;
+    top: -8px;
+    right: -1px;
+}
+
+
+
+/* main slider */
+.other-section .main-title {
+    font-family: 'Formular-Medium';
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 20px 10px;
+}
+.swiper .swiper-slide {
+    width: 18%;
+}
+.swiper .swiper-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.swiper .swiper-slide .info {
+    bottom: 0;
+    padding: 10px;
+}
+.swiper .swiper-slide .info .title {
+    font-family: 'Formular-Bold';
+}
+.swiper .swiper-slide .info .subtitle {
+    font-family: 'Formular-Regular';
+    color: #D0D7DA;
+}
+.swiper .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.swiper .swiper-button-next::after {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3289EF;
+}
+
+.other-section .btn {
+    margin-top: 20px;
+}
+
+/* ad blocks */
+.ad-block {
+    background: #C4C4C4;
+    border-radius: 10px;
+}
+.ad-block.ad-block--1 {
+    height: 550px;
+}
+.ad-block.ad-block--2 {
+    height: 100px;
+}
+
+@media (max-width: 1440px) {
+    .event-block .images {
+        width: 230px;
+    }
+    .event-block .images .thumbnail-block .item img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 992px) {
+    .breadcrumb-nav {
+        margin-left: 0;
+    }
+    .event-block {
+        padding: 20px;
+    }
+    .ad-block, .ad-section {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-nav {
+        margin-left: 12px;
+    }
+
+    .event-block {
+        padding: 20px 12px;
+        border-radius: 0;
+    }
+    .event-block .close-icon {
+        right: 12px;
+    }
+
+    .event-block .images {
+        width: 150px;
+    }
+    .event-block .images .thumbnail-block .item:last-child {
+        display: none;
+    }
+    .section-event .container, 
+    .section-event .col-lg-9 {
+        padding: 0;
+    }
+    .section-event .row {
+        --bs-gutter-x: 0;
+    }
+
+    .timetable .cinema-name {
+        width: 32%;
+    }
+    .timetable .cinema-name p {
+        padding-right: 22px !important;
+    }
+    .timetable .dates {
+        width: 68%;
+    }
+    .timetable ul li {
+        width: 57px;
+    }
+    
+    .other-section .main-title {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        display: none;
+    }
+
+    .event-block {
+        padding: 16px 12px;
+    }
+    .event-block .column,
+    .timetable {
+        flex-direction: column;
+    }
+
+
+    .event-block .mobile-title {
+        display: block;
+    }
+
+    .event-block .images,
+    .event-block .about,
+    .timetable .cinema-name,
+    .timetable .dates {
+        width: 100%;
+    }
+    
+    .event-block .images .thumbnail-block .item:last-child {
+        display: unset;
+    }
+
+    .event-block .about {
+        margin-left: 0;
+    }
+    .event-block .title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .event-block .subtitle {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .event-block .about .type,
+    .event-block .about .title,
+    .event-block .about .subtitle {
+        display: none !important;
+    }
+    .event-block .desc {
+        margin-top: 20px;
+    }
+
+    .timetable {
+        padding: 15px 0;
+    }
+    
+}

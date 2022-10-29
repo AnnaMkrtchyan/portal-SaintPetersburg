@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Санкт-Петербурга</title>
+    <link rel="icon" href="img/window_icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+        <div class="container header-top">
+            <div class="row align-items-end">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8">
+                    <div>
+                        <a href="main.html" class="main-logo d-flex text-decoration-none">
+                            <div class="logo-img">
+                                <img src="./img/Peterburg-logo.png" alt="header logo" />
+                            </div>
+                            <div>
+                                <p class="subtitle fs-12 text-grey mb-0">Городской портал</p>
+                                <p class="city-name text-black mb-0">Санкт-Петербург</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-5 col-4 dnone">
+                    <div class="d-flex justify-content-center" id="header-news">
+                        <div class="d-flex flex-column mobile-none">
+                            <span class="text-grey fs-12">Понедельник</span>
+                            <span class="text-black fs-14" style="margin-top: 3px;">19 июля</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span class="text-blue fs-12">Погода</span>
+                            <p class="text-black fs-14 d-flex align-items-center mb-0">
+                                12°С
+                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C12.8202 12 10.9637 13.3955 10.2802 15.3448L10.036 16.0412L9.29855 16.0132C9.27884 16.0125 9.23736 16.0105 9.19359 16.0085C9.16966 16.0074 9.14505 16.0062 9.12293 16.0052C9.08803 16.0036 9.05517 16.0022 9.02873 16.0012C9.00504 16.0002 8.99569 16 8.99569 16C8.99569 16 8.99724 16 9 16C7.34315 16 6 17.3431 6 19C6 20.6569 7.34315 22 9 22H21C22.6569 22 24 20.6569 24 19C24 17.3431 22.6569 16 21 16C20.9143 16 20.8298 16.0036 20.7466 16.0105L19.9758 16.0747L19.7198 15.3448C19.0363 13.3955 17.1798 12 15 12ZM8.66879 14.0108C9.78957 11.641 12.2021 10 15 10C17.7979 10 20.2104 11.641 21.3312 14.0108C23.9382 14.1813 26 16.3499 26 19C26 21.7614 23.7614 24 21 24H9C6.23858 24 4 21.7614 4 19C4 16.3499 6.06178 14.1813 8.66879 14.0108Z" fill="#D0D7DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00044 10C6.00044 8.34315 7.34359 7 9.00044 7C10.5191 7 11.7743 8.12847 11.973 9.59264C12.5858 9.34192 13.2366 9.16501 13.9147 9.07303C13.48 6.75451 11.4451 5 9.00044 5C6.23902 5 4.00044 7.23858 4.00044 10C4.00044 11.5704 4.72446 12.9718 5.8569 13.8884C6.50802 13.4871 7.24162 13.2068 8.02637 13.0787C8.06476 13.0105 8.10412 12.943 8.14444 12.8761C6.90465 12.5077 6.00044 11.3594 6.00044 10Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00044 0C9.55273 0 10.0004 0.447715 10.0004 1V3C10.0004 3.55228 9.55273 4 9.00044 4C8.44816 4 8.00044 3.55228 8.00044 3V1C8.00044 0.447715 8.44816 0 9.00044 0Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.340196 5C0.616339 4.52171 1.22793 4.35783 1.70622 4.63398L3.43827 5.63398C3.91657 5.91012 4.08044 6.52171 3.8043 7C3.52816 7.47829 2.91657 7.64217 2.43827 7.36603L0.706222 6.36603C0.227929 6.08989 0.0640539 5.47829 0.340196 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6607 5C17.9368 5.47829 17.773 6.08988 17.2947 6.36602L15.5626 7.36602C15.0843 7.64217 14.4727 7.47829 14.1966 7C13.9204 6.52171 14.0843 5.91011 14.5626 5.63397L16.2947 4.63397C16.773 4.35783 17.3846 4.52171 17.6607 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80431 13C4.08045 13.4783 3.91657 14.0899 3.43828 14.366L1.70623 15.366C1.22794 15.6422 0.616348 15.4783 0.340206 15C0.0640634 14.5217 0.227939 13.9101 0.706231 13.634L2.43828 12.634C2.91657 12.3578 3.52817 12.5217 3.80431 13Z" fill="#FFAE50"/>
+                                </svg>                                        
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <span class="text-grey fs-12">Завтра</span>
+                            <p class="text-grey fs-14 d-flex align-items-center mb-0">
+                                15°С
+                                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 6px;">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 12C12.8202 12 10.9637 13.3955 10.2802 15.3448L10.036 16.0412L9.29855 16.0132C9.27884 16.0125 9.23736 16.0105 9.19359 16.0085C9.16966 16.0074 9.14505 16.0062 9.12293 16.0052C9.08803 16.0036 9.05517 16.0022 9.02873 16.0012C9.00504 16.0002 8.99569 16 8.99569 16C8.99569 16 8.99724 16 9 16C7.34315 16 6 17.3431 6 19C6 20.6569 7.34315 22 9 22H21C22.6569 22 24 20.6569 24 19C24 17.3431 22.6569 16 21 16C20.9143 16 20.8298 16.0036 20.7466 16.0105L19.9758 16.0747L19.7198 15.3448C19.0363 13.3955 17.1798 12 15 12ZM8.66879 14.0108C9.78957 11.641 12.2021 10 15 10C17.7979 10 20.2104 11.641 21.3312 14.0108C23.9382 14.1813 26 16.3499 26 19C26 21.7614 23.7614 24 21 24H9C6.23858 24 4 21.7614 4 19C4 16.3499 6.06178 14.1813 8.66879 14.0108Z" fill="#D0D7DA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.00044 10C6.00044 8.34315 7.34359 7 9.00044 7C10.5191 7 11.7743 8.12847 11.973 9.59264C12.5858 9.34192 13.2366 9.16501 13.9147 9.07303C13.48 6.75451 11.4451 5 9.00044 5C6.23902 5 4.00044 7.23858 4.00044 10C4.00044 11.5704 4.72446 12.9718 5.8569 13.8884C6.50802 13.4871 7.24162 13.2068 8.02637 13.0787C8.06476 13.0105 8.10412 12.943 8.14444 12.8761C6.90465 12.5077 6.00044 11.3594 6.00044 10Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00044 0C9.55273 0 10.0004 0.447715 10.0004 1V3C10.0004 3.55228 9.55273 4 9.00044 4C8.44816 4 8.00044 3.55228 8.00044 3V1C8.00044 0.447715 8.44816 0 9.00044 0Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.340196 5C0.616339 4.52171 1.22793 4.35783 1.70622 4.63398L3.43827 5.63398C3.91657 5.91012 4.08044 6.52171 3.8043 7C3.52816 7.47829 2.91657 7.64217 2.43827 7.36603L0.706222 6.36603C0.227929 6.08989 0.0640539 5.47829 0.340196 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6607 5C17.9368 5.47829 17.773 6.08988 17.2947 6.36602L15.5626 7.36602C15.0843 7.64217 14.4727 7.47829 14.1966 7C13.9204 6.52171 14.0843 5.91011 14.5626 5.63397L16.2947 4.63397C16.773 4.35783 17.3846 4.52171 17.6607 5Z" fill="#FFAE50"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80431 13C4.08045 13.4783 3.91657 14.0899 3.43828 14.366L1.70623 15.366C1.22794 15.6422 0.616348 15.4783 0.340206 15C0.0640634 14.5217 0.227939 13.9101 0.706231 13.634L2.43828 12.634C2.91657 12.3578 3.52817 12.5217 3.80431 13Z" fill="#FFAE50"/>
+                                </svg>                                        
+                            </p>
+                        </div>
+                        <div class="d-flex flex-column last-block">
+                            <span class="text-grey fs-12">Курсы валют</span>
+                            <p class="fs-14 mb-0" style="margin-top: 3px;">
+                                <span class="text-grey">$</span> 77,50 <span class="text-grey">&bull; €</span> 90,04
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-2 col-sm-2 col-3">
+                    <div class="header-icons">
+                        <form class="d-flex justify-content-end">
+                            <div>
+                                <div class="search-block position-relative">
+                                    <input class="form-control search-box" type="search" placeholder="Поиск по сайту" autocomplete="off" role="combobox" id="input" name="browsers">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon position-absolute">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z"/>
+                                        <path d="M11.9056 13.3199L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L13.3199 11.9056C12.9092 12.4339 12.4339 12.9092 11.9056 13.3199Z"/>
+                                    </svg>
+                                </div>
+                                <datalist id="browsers" role="listbox">
+                                    <option value="Зоотовары">Зоотовары</option>
+                                    <option value="Товары для дачи">Товары для дачи</option>
+                                    <option value="Товары для дома">Товары для дома</option>
+                                    <option value="Спорттовары">Спорттовары</option>
+                                </datalist>
+                            </div>
+                            <a href="#login-modal" class="btn btn-bordered d-flex align-items-center text-blue fs-14 dnone" data-bs-toggle="modal">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C5.13401 2 2 5.13401 2 9C2 12.866 5.13401 16 9 16C12.866 16 16 12.866 16 9C16 5.13401 12.866 2 9 2ZM0 9C0 4.02944 4.02944 0 9 0C13.9706 0 18 4.02944 18 9C18 13.9706 13.9706 18 9 18C4.02944 18 0 13.9706 0 9Z" fill="#3289EF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07451 12.4272C4.11683 12.3975 4.15956 12.3683 4.20266 12.3395C4.70371 12.0055 5.27113 11.7267 5.88658 11.5115C5.33206 10.825 5 9.95126 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9C13 9.95126 12.6679 10.825 12.1134 11.5115C12.7289 11.7267 13.2963 12.0055 13.7973 12.3395C13.8404 12.3683 13.8832 12.3975 13.9255 12.4272C13.5338 12.9892 13.0483 13.4809 12.4918 13.8798C11.6037 13.3488 10.3822 13 9 13C7.61779 13 6.39629 13.3488 5.50816 13.8798C4.95167 13.4809 4.46624 12.9892 4.07451 12.4272ZM7 9C7 7.89543 7.89543 7 9 7C10.1046 7 11 7.89543 11 9C11 10.1046 10.1046 11 9 11C7.89543 11 7 10.1046 7 9Z" fill="#3289EF"/>
+                                </svg>                                        
+                                <span class="tablet-none">Войти</span>
+                            </a>
+                        </form>
+                        <div class="mobile-menu">
+                            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <div id="navbar-open" style="margin-top: -1px;">
+                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447715 16 1C16 1.55228 15.5523 2 15 2H1C0.447715 2 0 1.55228 0 1Z" fill="#3289EF"/>
+                                        <path d="M0 6C0 5.44772 0.447715 5 1 5H15C15.5523 5 16 5.44772 16 6C16 6.55228 15.5523 7 15 7H1C0.447715 7 0 6.55228 0 6Z" fill="#3289EF"/>
+                                        <path d="M0 11C0 10.4477 0.447715 10 1 10H15C15.5523 10 16 10.4477 16 11C16 11.5523 15.5523 12 15 12H1C0.447715 12 0 11.5523 0 11Z" fill="#3289EF"/>
+                                    </svg>
+                                </div>
+                                <div id="navbar-close" class="hidden">
+                                    <img src="img/close.svg" alt="close icon" width="16" height="16" style="margin-bottom: 3px;" />
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <div>
+                                    <form>
+                                        <div>
+                                            <div class="search-block position-relative">
+                                                <input class="form-control search-box pe-5" type="" placeholder="Поиск по сайту" autocomplete="off" role="combobox" id="input-mobile" name="mobile-result">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon position-absolute">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7Z"/>
+                                                    <path d="M11.9056 13.3199L14.2929 15.7071C14.6834 16.0976 15.3166 16.0976 15.7071 15.7071C16.0976 15.3166 16.0976 14.6834 15.7071 14.2929L13.3199 11.9056C12.9092 12.4339 12.4339 12.9092 11.9056 13.3199Z"/>
+                                                </svg>
+                                            </div>
+                                            <datalist id="mobile-result" role="listbox">
+                                                <option value="Зоотовары">Зоотовары</option>
+                                                <option value="Товары для дачи">Товары для дачи</option>
+                                                <option value="Товары для дома">Товары для дома</option>
+                                                <option value="Спорттовары">Спорттовары</option>
+                                            </datalist>
+                                        </div>
+                                    </form>
+                                    <p class="navbar-brand text-black mb-1 pt-0">Меню</p>
+                                    <ul class="navbar-nav m-0 p-0">
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Новости
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Объявления
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Афиша
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Справочник организаций
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Еще раздел
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="companies.html" class="nav-link w-100 d-flex justify-content-between align-items-center">
+                                                Еще один раздел
+                                                <img src="img/icons/right-arrow-mobile.svg" alt="right arrow" width="9" height="14" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mobile-menu-bottom">
+                                    <p class="text-grey text-center pb-2 border-bottom">Понедельник, <span class="text-black">19 июля</span></p>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="d-flex flex-column me-4">
+                                                <span class="text-blue fs-12">Погода</span>
+                                                <p class="text-black fs-14 d-flex align-items-center mb-0">
+                                                    12°С
+                                                    <img src="img/icons/sunny.svg" alt="sunny icon" width="25" height="24" />                               
+                                                </p>
+                                            </div>
+                                            <div class="d-flex flex-column me-3">
+                                                <span class="text-grey fs-12">Завтра</span>
+                                                <p class="text-grey fs-14 d-flex align-items-center mb-0">
+                                                    15°С
+                                                    <img src="img/icons/sunny.svg" alt="sunny icon" width="25" height="24" />                                       
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column last-block">
+                                            <span class="text-grey fs-12">Курсы валют</span>
+                                            <p class="fs-14 mb-0" style="margin-top: 3px;">
+                                                <span class="text-grey">$</span> 77,50 <span class="text-grey">• €</span> 90,04
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-menu"> 
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div id="header-navbar">
+                        <nav class="navbar navbar-expand" >
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav m-0 p-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="news.html" id="navbarDropdown">
+                                            Новости
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Происшествия</a></li>
+                                            <li><a class="dropdown-item" href="#">Политика</a></li>
+                                            <li><a class="dropdown-item" href="#">Спорт</a></li>
+                                            <li><a class="dropdown-item" href="#">Общество</a></li>
+                                            <li><a class="dropdown-item" href="#">Здоровье</a></li>
+                                            <li><a class="dropdown-item" href="#">Экономика</a></li>
+                                            <li><a class="dropdown-item" href="#">#Коронавирус</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="announcements.html">Объявления</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="events.html">Афиша</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="companies.html">Справочник организаций</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Еще раздел</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link nav-link-last" href="#">Еще один раздел</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header-bottom"> 
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div class="covid-section bg-white d-flex justify-content-between">
+                        <div>
+                            <p class="text-grey fs-14 mb-0">Коронавирус</p>
+                        </div>
+                        <div class="d-flex dnone">
+                            <p class="text-black fs-14 mb-0">В Санкт-Петербурге: 5812 <span class="text-grey">(+49)</span></p>
+                            <p class="text-black fs-14 mb-0 tablet-none">В области: 110 153 <span class="text-grey">(+3742)</span></p>
+                            <p class="text-black fs-14 mb-0 mobile-none">В России: 1 340 409 <span class="text-grey">(+13 424)</span></p>
+                        </div>
+                        <div>
+                            <a href="#" class="text-blue fs-14 mb-0 d-flex align-items-center text-decoration-none">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-1">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 11C8.76142 11 11 8.76142 11 6C11 3.23858 8.76142 1 6 1C3.23858 1 1 3.23858 1 6C1 8.76142 3.23858 11 6 11ZM12 6C12 9.31371 9.31371 12 6 12C2.68629 12 -3.12222e-07 9.31371 0 6C3.12222e-07 2.68629 2.68629 -3.12222e-07 6 0C9.31371 3.12222e-07 12 2.68629 12 6Z" fill="#3289EF"/>
+                                    <path d="M5.99861 4.72999C6.35152 4.72999 6.63761 5.01608 6.63761 5.36899V8.86099C6.63761 9.2139 6.35152 9.49999 5.99861 9.49999C5.6457 9.49999 5.35961 9.2139 5.35961 8.86099V5.36899C5.35961 5.01608 5.6457 4.72999 5.99861 4.72999ZM5.98982 2.5C6.21782 2.5 6.40382 2.572 6.54782 2.716C6.69782 2.854 6.77282 3.031 6.77282 3.247C6.77282 3.463 6.69782 3.643 6.54782 3.787C6.40382 3.925 6.21782 3.994 5.98982 3.994C5.76182 3.994 5.57582 3.925 5.43182 3.787C5.28782 3.643 5.21582 3.463 5.21582 3.247C5.21582 3.031 5.28782 2.854 5.43182 2.716C5.57582 2.572 5.76182 2.5 5.98982 2.5Z" fill="#3289EF"/>
+                                </svg>
+                                О вакцинации
+                            </a>
+                        </div>
+                    </div>
+                    <div class="covid-section bg-white pt-0 px-0 d-none">
+                        <div class="d-flex scrollable-block">
+                            <p class="text-black fs-14 mb-0" style="margin-left: 10px;">В Санкт-Петербурге: 5812 <span class="text-grey">(+49)</span></p>
+                            <p class="text-black fs-14 mb-0">В области: 110 153 <span class="text-grey">(+3742)</span></p>
+                            <p class="text-black fs-14 mb-0" style="margin-right: 10px;">В России: 1 340 409 <span class="text-grey">(+13 424)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </header>
+
+    <main>
+        <section class="section news-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12">
+                        <div>
+                            <h2 class="section-title text-black">Последние новости</h2>
+                            <ul class="section-list d-flex list-unstyled">
+                                <li>
+                                    <a href="" class="ps-0">Происшествия</a>
+                                </li>
+                                <li>
+                                    <a href="">Политика</a>
+                                </li>
+                                <li>
+                                    <a href="">Спорт</a>
+                                </li>
+                                <li>
+                                    <a href="">Общество</a>
+                                </li>
+                                <li>
+                                    <a href="">Здоровье</a>
+                                </li>
+                                <li>
+                                    <a href="">Экономика</a>
+                                </li>
+                                <li>
+                                    <a href="">#Коронавирус</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Все новости
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.148497 1.10898C0.101851 1.05311 0.0587024 0.993132 0.0355038 0.924143C-0.114335 0.478549 0.227494 0 0.733841 0C0.964526 0 1.18175 0.104952 1.32016 0.283282L4.42874 4L1.32016 7.71672C1.18175 7.89505 0.964526 8 0.733842 8C0.227494 8 -0.114335 7.52145 0.035504 7.07586C0.0587026 7.00687 0.101852 6.94689 0.148497 6.89102L2.56207 4L0.148497 1.10898Z" fill="#3289EF"/>
+                                            <path d="M3.71976 1.10898C3.67311 1.05311 3.62997 0.993132 3.60677 0.924143C3.45693 0.478549 3.79876 0 4.3051 0C4.53579 0 4.75301 0.104952 4.89142 0.283282L8 4L4.89142 7.71672C4.75301 7.89505 4.53579 8 4.3051 8C3.79876 8 3.45693 7.52145 3.60677 7.07586C3.62997 7.00687 3.67311 6.94689 3.71976 6.89102L6.13333 4L3.71976 1.10898Z" fill="#3289EF"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-6">
+                        <div class="h-100">
+                            <a href="#" class="d-block h-100">
+                                <div class="news-big position-relative h-100">
+                                    <div class="position-absolute info">
+                                        <span class="event text-uppercase">Происшествия</span>
+                                        <p class="title text-white fs-18">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма </p>
+                                        <span class="date fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 news-none">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none">
+                                <div class="card news-card h-100">
+                                    <img src="./img/news/2.jpg" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                        <span class="event text-grey text-uppercase">Происшествия</span>
+                                        <p class="title text-black fs-14 my-1">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма</p>
+                                        <span class="date text-grey fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none h-100">
+                                <div class="important-news position-relative h-100">
+                                    <div id="carouselExampleControls" class="carousel slide h-100" data-bs-ride="carousel">
+                                        <div class="carousel-inner h-100">
+                                            <div class="carousel-item position-relative h-100 active">
+                                                <img src="./img/slider/aksenov.jpg" class="d-block w-100 h-100" alt="image">
+                                                <div class="info position-absolute">
+                                                    <span class="event text-white text-uppercase">Происшествия</span>
+                                                    <p class="title text-white fs-14 my-1">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма </p>
+                                                    <span class="date text-white fs-12">вчера</span>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item position-relative h-100">
+                                                <img src="./img/slider/aksenov.jpg" class="d-block w-100 h-100" alt="image">
+                                                <div class="info position-absolute">
+                                                    <span class="event text-white text-uppercase">Происшествия</span>
+                                                    <p class="title text-white fs-14 my-1">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма </p>
+                                                    <span class="date text-white fs-12">вчера</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="fixed-block position-absolute">
+                                        <p class="text-center text-white fs-14">Важные новости</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none">
+                                <div class="card news-card h-100">
+                                    <img src="./img/news/2.jpg" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                        <span class="event text-grey text-uppercase">Происшествия</span>
+                                        <p class="title text-black fs-14 my-1">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма</p>
+                                        <span class="date text-grey fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none">
+                                <div class="card news-card h-100">
+                                    <img src="./img/news/5.jpg" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                        <span class="event text-grey text-uppercase">Общество</span>
+                                        <p class="title text-black fs-14 my-1">ФОТО: Завершен капремонт территории возле Симферопольского музыкального училища</p>
+                                        <span class="date text-grey fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 news-none-mobile">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none">
+                                <div class="card news-card h-100">
+                                    <img src="./img/news/6.jpg" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                        <span class="event text-grey text-uppercase">Общество</span>
+                                        <p class="title text-black fs-14 my-1">За сутки в Крыму 4 человека утонули, один - пропал без вести: купались во время шторма </p>
+                                        <span class="date text-grey fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6 news-none">
+                        <div class="h-100">
+                            <a href="#" class="text-decoration-none">
+                                <div class="card news-card h-100">
+                                    <img src="./img/news/5.jpg" class="card-img-top" alt="image">
+                                    <div class="card-body">
+                                        <span class="event text-grey text-uppercase">Общество</span>
+                                        <p class="title text-black fs-14 my-1">ФОТО: Завершен капремонт территории возле Симферопольского музыкального училища</p>
+                                        <span class="date text-grey fs-12">час назад</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-pagination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center align-items-center mb-0">
+                                <li class="page-item page-arrows arrow-previous">
+                                    <a class="page-link p-0" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">
+                                            <svg width="10" height="20" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 1L2 11L12 21" stroke="#D0D7DA" stroke-width="2" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item page-arrows arrow-next">
+                                    <a class="page-link p-0" href="#" aria-label="Next">
+                                        <span aria-hidden="true">
+                                            <svg width="10" height="20" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L11 11L1 21" stroke="#3289EF" stroke-width="2" stroke-linecap="round"></path>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item page-numbers"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item page-numbers"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item page-numbers"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item page-numbers"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item page-numbers"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item page-numbers"><a class="page-link" href="#">13</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-12">
+                    <div class="d-flex justify-content-between align-items-end">
+                        <a href="main.html">
+                            <img src="./img/footer/footer-logo.svg" alt="footer logo" width="123" />
+                        </a>
+                        <p class="text-grey fs-14 mb-0 none">© 178info.ru, 2021</p>
+                    </div>
+                </div>
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12">
+                    <div>
+                        <nav class="navbar navbar-expand p-0">
+                            <div class="collapse navbar-collapse">
+                                <ul class="navbar-nav m-0 p-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link ps-0" href="news.html">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="announcements.html">Объявления</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="events.html">Афиша</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="companies.html">Справочник организаций</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Еще раздел</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link pe-0" href="#">Еще один раздел</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 tablet-none">
+                    <div class="d-flex justify-content-end">
+                        <p class="text-grey fs-14 mb-0">© 178info.ru, 2021</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-10">
+                    <div>
+                        <p class="text-grey text mb-0">Допускается цитирование материалов без получения предварительного согласия 3652.ru при условии размещения в тексте обязательной ссылки на 3652.ru - Сайт города Симферополя. Для интернет-изданий обязательно размещение прямой, открытой для поисковых систем гиперссылки на цитируемые статьи не ниже второго абзаца в тексте или в качестве источника. Нарушение исключительных прав преследуется по закону.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-2">
+                    <div class="d-flex justify-content-end">
+                        <img src="./img/footer/18+.svg" alt="footer logo" width="38" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>

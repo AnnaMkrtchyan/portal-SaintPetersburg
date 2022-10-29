@@ -1,0 +1,218 @@
+.breadcrumb-nav {
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+.breadcrumb-nav .breadcrumb-item a, .breadcrumb-item.active {
+    font-family: 'Formular-Medium';
+}
+.breadcrumb-nav .breadcrumb-item.active {
+    color: #D0D7DA;
+}
+.breadcrumb-nav .breadcrumb-item+.breadcrumb-item::before {
+    color: #D0D7DA;
+}
+
+/* main */
+.main-block {
+    padding: 20px 20px 40px 40px;
+    border-radius: 10px;
+}
+.main-block .subtitle {
+    margin-top: 20px;
+}
+.main-block .subtitle, .info {
+    font-family: 'Formular-Regular';
+}
+.number {
+    display: none;
+}
+.main-block .title {
+    font-family: 'Formular-Bold';
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 520px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.main-block .btn-bordered {
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.main-block .info {
+    margin: 25px 20px 0 0;
+}
+
+/* similar ads */
+.similar-ads .title {
+    font-family: 'Formular-Medium';
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+}
+.similar-ads .card {
+    padding: 4px 10px 12px;
+    border: 1px solid #D0D7DA;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.similar-ads .card span, p {
+    font-family: 'Formular-Regular';
+}
+.similar-ads .card h6 {
+    font-family: 'Formular-Bold';
+}
+
+
+/* carousel */
+.carousel-inner {
+    max-width: 440px;
+    width: 100%;
+}
+.carousel-item {
+    height: 400px;
+    /* min-height: 300px; */
+}
+.carousel-item img {
+    border-radius: 10px;
+}
+
+.carousel-indicators button {
+    width: 70px !important;
+    height: 70px !important;
+    border: none !important;
+}
+.carousel-indicators button img {
+    border-radius: 8px;
+}
+.carousel-indicators {
+    justify-content: unset!important;
+    margin: 0 !important;
+    bottom: -10px !important;
+}
+.carousel-indicators [data-bs-target] {
+    text-indent: unset;
+    margin-left: 0;
+    margin-right: 7px;
+    bottom: auto;
+    padding: 3px;
+}
+
+.carousel-indicators button.active {
+    border: 2px solid #3289EF !important;
+    border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .column {
+        flex-direction: column;
+    }
+    .main-block {
+        padding: 20px;
+    }
+    .main-block .subtitle,
+    .main-block .btn-bordered {
+        margin: 0;
+    }
+    .main-block .btn-bordered {
+        width: 200px;
+    }
+    .main-block .title {
+        margin-bottom: 20px;
+    }
+    .similar-ads .title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .similar-ads .title {
+        text-align: left;
+        margin-top: 30px;
+    }
+    .similar-ads .cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    .similar-ads .card {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section .col-lg-9 {
+        padding: 0;
+    }
+    .main-block {
+        border-radius: unset;
+        padding: 20px 12px;
+    }
+    .similar-ads .card {
+        width: 49%;
+    }
+    .card-none {
+        display: none;
+    }
+}
+
+.carousel-item img {
+    border-radius: 10px;
+}
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        display: none;
+    }
+    .main-block .title {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .carousel-item {
+        height: 350px;
+    }
+    .carousel-item img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        flex-direction: column;
+    }
+    .similar-ads .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* .carousel.slide {
+        width: 109%;
+        margin-left: -19px;
+    }
+    .carousel-inner {
+        max-width: unset;
+    } */
+    .carousel-item img {
+        width: 350px;
+        /* border-radius: 0; */
+    }
+}
+@media (max-width: 390px) {
+    .carousel-item img {
+        width: 290px;
+    }
+    .carousel-item {
+        height: 300px;
+    }
+}
+@media (max-width: 330px) {
+    .carousel-item img {
+        max-width: 260px;
+        width: 100%;
+    }
+    .carousel-item {
+        height: 275px;
+    }
+}

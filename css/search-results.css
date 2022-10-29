@@ -1,0 +1,99 @@
+.section-top .section-title {
+    margin-bottom: 9px;
+}
+.section-top span {
+    font-family: 'Formular-Regular';
+    margin-right: 20px;
+}
+
+/* categories menu */
+.categories-item a {
+    display: block;
+    font-family: 'Formular-Regular';
+    color: #3289EF;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+.categories-item:first-child a {
+    margin-left: 20px;
+}
+.categories-item.active a {
+    background-color: #D0D7DA;
+    border-radius: 5px;
+    color: #1B1C1E;
+}
+
+/* search results */
+.search-content {
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 20px;
+}
+.search-content .title {
+    font-family: 'Formular-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.search-content .title span {
+    font-family: 'Formular-Medium' !important;
+}
+.result-item {
+    margin-bottom: 20px;
+}
+.result-item .subtitle, .title, .info {
+    font-family: 'Formular-Regular';
+}
+.result-item .subtitle {
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+.result-item .subtitle span:first-child::after {
+    content: "\2022";
+    color: #8C979B;
+    margin: 0 3px 0 6px;
+}
+.result-item .title {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 4px 0 6px;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+    .categories {
+        overflow-x: auto;
+        white-space: nowrap;
+    }   
+    .categories::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+    }
+}
+@media (max-width: 992px) {
+    .search-content {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .section-top .section-title {
+        text-align: left !important;
+    }
+    #search-results span {
+        margin-right: 14px;
+    }
+
+    #search-results .container, 
+    #search-results .col-md-12 {
+        padding: 0;
+    }
+    #search-results .container .row {
+        --bs-gutter-x: 0;
+    }
+
+    .search-content {
+        border-radius: 0;
+        padding: 14px 12px;
+    }
+}

@@ -1,0 +1,100 @@
+.page-not-found {
+    background-color: #1B6DCE;
+    height: 100vh;
+}
+
+.main-logo {
+    width: fit-content;
+    margin: 40px auto 80px;
+    padding: 9px 9px 7px 9px;
+}
+.main-logo .logo-img {
+    width: 36px; 
+    height: 42px;
+    margin-right: 10px;
+}
+.main-logo .subtitle {
+    font-family: 'Formular-Regular';
+    line-height: 15px;
+    margin-top: 1px;
+}
+.main-logo .city-name {
+    font-family: 'Formular-Bold';
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.main-logo, .menu {
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Formular-Bold';
+    font-size: 400px;
+    line-height: 322px;
+}
+.not-found-text {
+    font-family: 'Formular-Medium';
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+.paragraph, .menu-item a {
+    font-family: 'Formular-Regular';
+}
+.menu {
+    width: fit-content;
+    padding: 8px 15px;
+    margin-top: 24px;
+}
+.menu-item a {
+    padding: 0 15px;
+}
+
+/* media queries */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 350px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .logo {
+        margin-bottom: 130px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .logo {
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-size: 200px;
+        line-height: 220px;
+    }
+    .menu {
+        max-width: 617px;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .menu::-webkit-scrollbar {
+        display: none; 
+    }
+}
+@media (max-width: 576px) {
+    .logo {
+        margin-bottom: 80px;
+    }
+    h1 {
+        font-size: 120px;
+        line-height: 120px;
+    }
+    .menu {
+        max-width: 500px;
+        width: 100%;
+        padding: 8px 5px;
+        margin-top: 60px;
+    }
+}
